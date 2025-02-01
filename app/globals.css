@@ -29,4 +29,7 @@
   a {
     @apply text-white hover:text-orange transition-all duration-300 cursor-pointer;
   }
+  label {
+    @apply text-white text-sm uppercase font-normal block mb-2;
+  }
 }
