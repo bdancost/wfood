@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
 import Reservation from "@/components/Reservation";
 import About from "@/components/About";
+import Map from "@/components/Map";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Menu />
       <Reservation />
       <About />
+      <Map />
       {/* <StyleGuide /> */}
       <div className="h-[4000px]"></div>
     </main>

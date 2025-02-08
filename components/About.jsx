@@ -11,15 +11,21 @@ const About = () => {
       id="about"
     >
       {/* text */}
-      <div className="xl:pl-[135px]">
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="xl:pl-[135px]"
+      >
         <h1 className="mb-9">Let's Talk About W'Food</h1>
-        <p>
+        <p className="mb-8">
           Mauris nam et ipsum ipsum in. Risus nullam in sit mi est justo at
           fringilla. Consequat ac fringilla quis enim, sit ipsum. Laoreet eget
           metus morbi convallis gravida elementum facilisis. Neque enim quis
           fusce amet. Pellentesque netus vel eu{" "}
         </p>
-        <p>
+        <p className="mb-10">
           posuere ultrices facilisi. Senectus velit lobortis velit arcu varius
           lectus mattis. Dictum aenean duis aliquet Tortor purus egestas urna
           scelerisque vel ornare lectus ultricies. Nisi, eu ut ultricies enim
@@ -28,9 +34,14 @@ const About = () => {
           ultrices.
         </p>
         <Button>Read More</Button>
-      </div>
+      </motion.div>
       {/* img */}
-      <div>
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+      >
         <Image
           src="/about/img.png"
           width={705}
@@ -38,7 +49,7 @@ const About = () => {
           alt="about"
           className="hidden xl:flex"
         />
-      </div>
+      </motion.div>
     </section>
   );
 };
